@@ -1,3 +1,4 @@
+% eager evaluation -> calculation as soon as they are called
 declare ShiftLeft ShiftRight AddList Pascal FastPascal
 
 
