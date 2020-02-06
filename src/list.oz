@@ -24,12 +24,11 @@ fun {Pascal N}
     end
 end
 
-% Complexity Théta(N)
+% Complexity Théta(N²)
 fun {FastPascal N}
     if N == 1 then [1]
     else Tmp in
         Tmp = {FastPascal N-1}
-        {Browse Tmp}
         {AddList {ShiftLeft Tmp} {ShiftRight Tmp}}
     end
 end
