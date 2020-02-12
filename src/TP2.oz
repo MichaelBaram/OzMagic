@@ -33,7 +33,7 @@ Taken = [1 2 3 4 5 6 7]
 fun {Drop Xs N}
     case Xs of HXs|TXs then
         if N > 0 then
-            {Drop TXs N - 1} else nil end
+            {Drop TXs N - 1}
         else
             HXs|{Drop TXs N - 1}
         end
