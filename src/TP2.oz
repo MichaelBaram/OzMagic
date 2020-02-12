@@ -28,7 +28,7 @@ fun {Take Xs N}
 end
 
 Taken = [1 2 3 4 5 6 7]
-{Browse {Take Taken 5}}
+{Browse {Take Taken 10}}
 
 fun {Drop Xs N}
     case Xs of HXs|TXs then
@@ -42,3 +42,15 @@ end
 
 Todrop = [1 2 3 4 5 6 7]
 {Browse {Drop Todrop 5}}
+
+fun {MultList L}
+    local MultListSlave in
+        fun {MultListSlave K X}
+            case K of HK|TK then {MultListSlave TK HK * X} else X end
+        end
+        {MultListSlave L 1}
+    end
+end
+
+M = [1 2 3 4 5 6 7]
+{Browse {MultList M}}
