@@ -35,5 +35,5 @@ end
 
 L = {LazyPascal [1]}
 {Browse L} % Displayed because of pre-processing
-{Browse L.3.1}
+{Browse L.2.1}
 {Browse L}
